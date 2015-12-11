@@ -19,9 +19,8 @@ before_script:
 
 script:
   - npm test
-service:
-  -postgres
-  -psql
+services:
+  - postgres
 # Generate coverage report with istanbul
 after_script:
 #  - psql -c 'create database if not exists test;' -U postgres
